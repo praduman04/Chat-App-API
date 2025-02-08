@@ -4,7 +4,7 @@ export const connectDB=async () => {
         if (!process.env.CONNECTION_STRING) {
             throw new Error("MongoDB connection string is not defined in the environment variables.");
           }
-      const connect = await mongoose.connect(process.env.CONNECTION_STRING,{dbName:"Chat App"});
+      const connect = await mongoose.connect(process.env.CONNECTION_STRING,{dbName:"Chat-App"});
       console.log(
         "Database connected: ",
         connect.connection.host,
