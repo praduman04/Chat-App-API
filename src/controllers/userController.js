@@ -34,7 +34,7 @@ export const getMyProfile=async(req,res,next)=>{
   try {
     const user=await userModel.findById(req.user);
     if(!user){
-      next(new ErrorHandler("User Not Found",404));
+     return next(new ErrorHandler("User Not Found",404));
     }
     return res.status(200).json({
       success:true,
