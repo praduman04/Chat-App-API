@@ -5,7 +5,7 @@ const messageSchema=new mongoose.Schema({
         required:true
     },
     attachments:[{
-        pubic_id:{
+        public_id:{
             type:String,
             required:true
         },
